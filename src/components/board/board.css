@@ -1,0 +1,89 @@
+#board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 500px;
+  height: 400px;
+}
+
+.cell {
+  width: 150px;
+  height: 110px;
+  position: relative;
+  background-color: var(--ttt-bg-color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #board {
+    width: 100%;
+    min-width: 400px;
+    height: 300px;
+  }
+
+  .cell {
+    width: 130px;
+    height: 115px;
+  }
+}
+
+@media (max-width: 500px) {
+  #board {
+    gap: 10px;
+    min-width: 340px;
+  }
+
+  .cell {
+    width: 110px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  #board {
+    min-width: 320px;
+  }
+  .cell {
+    width: 100px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 360px) {
+  #board {
+    min-width: 300px;
+  }
+  .cell {
+    width: 90px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 350px) {
+  #board {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  #board {
+    min-width: 250px;
+  }
+  .cell {
+    width: 80px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 320px) {
+  #board {
+    min-width: 230px;
+  }
+  .cell {
+    width: 70px;
+    height: 120px;
+  }
+}

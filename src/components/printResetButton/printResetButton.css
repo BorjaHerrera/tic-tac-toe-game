@@ -1,0 +1,96 @@
+#winnerMessage {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--ttt-gap-m);
+  width: 60%;
+  height: 80%;
+  top: 110px;
+  background-color: var(--ttt-bg-color);
+  color: var(--ttt-bg-color-2);
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.reset-button {
+  margin-top: var(--ttt-margin-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  background-color: var(--ttt-color-x);
+  border: 1px solid var(--ttt-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: var(--ttt-color-o);
+}
+
+/*MEDIAS QUERIES*/
+
+@media (max-width: 1030px) {
+  #winnerMessage {
+    width: 80%;
+  }
+
+  .reset-button {
+    width: 33%;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 820px) {
+  #winnerMessage {
+    font-size: 5.7rem;
+  }
+
+  .reset-button {
+    width: 38%;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 670px) {
+  #winnerMessage {
+    width: 100%;
+    font-size: 5.5rem;
+  }
+
+  .reset-button {
+    width: 40%;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 520px) {
+  #winnerMessage {
+    width: 100%;
+    font-size: 5rem;
+    top: 90px;
+  }
+
+  .reset-button {
+    width: 50%;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 400px) {
+  #winnerMessage {
+    font-size: 4.5rem;
+    top: 90px;
+  }
+
+  .reset-button {
+    width: 50%;
+    font-size: 20px;
+  }
+}

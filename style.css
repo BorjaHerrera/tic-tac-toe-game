@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:root {
+  /* BRANDING COLORS */
+  --ttt-color-x: #ed556f;
+  --ttt-color-o: #fc9542;
+  --ttt-bg-color: #098165;
+  --ttt-bg-color-2: #c9cde4;
+  --ttt-bg-color-3: #0b192f;
+
+  /* SPACINGS */
+  --ttt-margin-xxs: 5px;
+  --ttt-margin-xs: 10px;
+  --ttt-margin-s: 20px;
+  --ttt-margin-m: 30px;
+  --ttt-margin-l: 40px;
+  --ttt-margin-xl: 50px;
+  --ttt-margin-xxl: 100px;
+  --ttt-margin-xxxl: 150px;
+  --ttt-margin-xxxxl: 180px;
+
+  --ttt-padding-xxs: 5px;
+  --ttt-padding-xs: 10px;
+  --ttt-padding-s: 20px;
+  --ttt-padding-m: 30px;
+  --ttt-padding-l: 40px;
+  --ttt-padding-xl: 60px;
+  --ttt-padding-xxl: 100px;
+  --ttt-padding-xxxl: 140px;
+
+  --ttt-gap-xxs: 5px;
+  --ttt-gap-xs: 10px;
+  --ttt-gap-s: 20px;
+  --ttt-gap-m: 30px;
+  --ttt-gap-l: 40px;
+  --ttt-gap-xl: 50px;
+  --ttt-gap-xxl: 100px;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100wvh;
+  min-height: 100svh;
+  margin: 0;
+  background-color: var(--ttt-bg-color);
+}
+#main {
+  width: 100%;
+  min-height: 100svh;
+  padding-top: var(--ttt-padding-xl);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1000px) {
+  #main {
+    padding-top: var(--ttt-padding-l);
+  }
+}

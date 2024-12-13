@@ -6,6 +6,9 @@ import {
   setCurrentPlayer,
   symbolClasses
 } from '../chooseSymbol/chooseSymbol';
+import { cells } from '../board/board';
+import { disableCellClicks, enableCellClicks } from '../../utils/disableCell';
+import { disableSymbolSelection } from '../../utils/disableSymbol';
 
 export const playerMove = (cell) => {
   if (isGameActive() && cell.textContent === '') {
@@ -21,6 +24,12 @@ export const playerMove = (cell) => {
 
     if (!winnerFound) {
       setCurrentPlayer(computerSymbol);
+      disableCellClicks(cells);
+      disableSymbolSelection();
+
+      setTimeout(() => {
+        enableCellClicks(cells);
+      }, 500);
     } else {
       setGameActive(false);
     }

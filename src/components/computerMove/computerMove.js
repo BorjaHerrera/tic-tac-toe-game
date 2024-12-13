@@ -18,8 +18,8 @@ export const computerMove = (cells) => {
           !cells[c].textContent
         ) {
           cells[c].textContent = moveSymbol;
-          cells[c].classList.remove(symbolClasses.X); // Remover clase X si está
-          cells[c].classList.remove(symbolClasses.O); // Remover clase O si está
+          cells[c].classList.remove(symbolClasses.X);
+          cells[c].classList.remove(symbolClasses.O);
           cells[c].classList.add(symbolClasses[moveSymbol]);
           return true;
         }
@@ -71,7 +71,7 @@ export const computerMove = (cells) => {
       return;
     }
 
-    const corners = [0, 2, 6, 8];
+    /*const corners = [0, 2, 6, 8];
     for (const corner of corners) {
       if (!cells[corner].textContent) {
         cells[corner].textContent = computerSymbol;
@@ -83,7 +83,7 @@ export const computerMove = (cells) => {
         return;
       }
     }
-
+*/
     const sides = [1, 3, 5, 7];
     for (const side of sides) {
       if (!cells[side].textContent) {

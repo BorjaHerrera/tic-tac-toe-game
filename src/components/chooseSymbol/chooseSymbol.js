@@ -1,6 +1,7 @@
 import './chooseSymbol.css';
 import { computerMove } from '../computerMove/computerMove';
 import { changeBgColor } from './changeBgColor';
+import { disableSymbolSelection } from '../../utils/disableSymbol';
 
 let playerSymbol = 'X';
 let computerSymbol = 'O';
@@ -32,6 +33,7 @@ export const chooseSymbol = () => {
     currentPlayer = 'X';
 
     changeBgColor(chooseXButton, chooseOButton);
+    disableSymbolSelection();
   });
 
   chooseOButton.addEventListener('click', () => {
@@ -43,5 +45,6 @@ export const chooseSymbol = () => {
 
     const cells = document.querySelectorAll('.cell');
     computerMove(cells);
+    disableSymbolSelection();
   });
 };

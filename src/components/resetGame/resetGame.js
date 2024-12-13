@@ -1,3 +1,4 @@
+import { enableSymbolSelection } from '../../utils/disableSymbol';
 import { cells } from '../board/board';
 import { resetSymbolSelection } from '../resetSymbolSelection/resetSymbolSelection';
 import { setGameActive } from '../setGameActive/setGameActive';
@@ -10,4 +11,5 @@ export const resetGame = () => {
   }
   setGameActive(true);
   resetSymbolSelection();
+  enableSymbolSelection();
 };
